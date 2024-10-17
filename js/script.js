@@ -37,7 +37,7 @@ class RecipeApp {
                 <h2>${recipe.title}</h2>
                 <img src="${recipe.image}" alt="${recipe.title}">
                 <p>Ready in ${recipe.readyInMinutes} minutes</p>
-                <a href="recipe.html?id=${recipe.id}">View Recipe</a>
+                <a href="views/recipe.html?id=${recipe.id}">View Recipe</a>
             </div>
         `;
     }
