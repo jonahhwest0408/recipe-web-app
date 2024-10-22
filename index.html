@@ -8,14 +8,26 @@
 </head>
 <body>
     <header>
-        <h1>Recipe Book</h1>
+        <h1><a href="/">Recipe Book</a></h1>
+        <div class="search-bar">
+            <p class="search-instructions">
+                Type a category (e.g., "breakfast", "lunch", "dinner", "dessert") or an ingredient to find recipes.
+            </p>
+            <input type="text" id="search-input" placeholder="Search for a recipe..." />
+            <button id="search-button">Search</button>
+        </div>
+        <nav>
+            <a href="views/favorites.html">Favorites</a>
+        </nav>
     </header>
+    <div class="body-title">
+        <h2>Top Favorites!</h2>
+    </div>
     <main id="recipe-container">
-        <a href="views/recipe.html?id=${recipe.id}">View Recipe</a>
-
+        <!-- Recipes generated here-->
     </main>
     <footer>
-        <p>&copy; 2024 Recipe Book</p>
+        <p>&copy; 2024 Recipe Book | Jonah West</p>
     </footer>
     <script src="js/script.js" type="module"></script>
 </body>
