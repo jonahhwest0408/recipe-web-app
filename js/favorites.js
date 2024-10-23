@@ -11,7 +11,7 @@ class FavoritesApp {
     // Render favorite recipes
     renderFavorites() {
         if (this.favorites.length === 0) {
-            this.favoritesContainer.innerHTML = '<p>No favorite recipes yet. Add some!</p>';
+            this.favoritesContainer.innerHTML = '<p class="animated-title">No favorite recipes yet. Add some!</p>';
         } else {
             this.favoritesContainer.innerHTML = this.favorites.map(recipe => this.createFavoriteCard(recipe)).join('');
         }

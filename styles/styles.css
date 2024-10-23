@@ -165,6 +165,15 @@ header a {
     transform: scale(1.02);
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.recipe-card {
+    animation: fadeIn 0.5s ease-in;
+}
+
 /* Styling for the View Recipe link */
 .view-recipe-link {
     display: block; 
@@ -240,7 +249,18 @@ h1, h2 {
     text-align: center;
 }
 
-.favorite-button--home
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: green; }
+    100% { color: blue; }
+}
+
+.animated-title {
+    animation: colorChange 5s infinite;
+}
+
 
 /* Ingredients Content */
 .ingredient--content {
